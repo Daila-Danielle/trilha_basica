@@ -1,7 +1,7 @@
 <!-- Tela de cadastro de beneficiarios -->
 
 <form method="POST" action="?pagina=salvar_beneficiario">
-    <input type="hidden" name="acaoo" value="cadastrar">
+    
     <div class="barraDivisoria"><b>DADOS DO BENEFICIÁRIO</b></div> 
     <hr>
     <div class="row">
@@ -52,15 +52,16 @@
             <div class="col-xs-12 col-sm-3">
                 <label class="label">UF</label>
                 <select class="form-select" name="uf" id="uf">
+                    <option value="MG">MG</option>
                     <?php //consumindo api para mostrar os estados
-                        ini_set('default_charset','UTF-8');
+                       /*  ini_set('default_charset','UTF-8');
                         $url = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
                         $conteudo = json_decode(file_get_contents($url));
 
                         foreach($conteudo as $ufs){
                                 $uf = $ufs->sigla;
                                         echo "<option value = '$uf'>$uf</option>";
-                        }
+                        } */
                     ?>                    
                 </select>
             </div>     

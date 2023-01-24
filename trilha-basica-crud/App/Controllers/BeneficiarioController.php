@@ -2,8 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Model\BeneficiarioModel;
+include_once('Models/BeneficiarioModel.php');
 
+var_dump('cheguei no controller');
 class BeneficiarioController 
 {
     /**
@@ -43,9 +44,11 @@ class BeneficiarioController
      */
     public static function save()
     {
+        var_dump("cheguei no save controller");
+        include('Models/BeneficiarioModel.php');
         
         $model = new BeneficiarioModel();
-
+        var_dump($_POST);
         $model->id         = (int) $_POST['id'];
         $model->nome       = $_POST['nome'];
         $model->documento  = $_POST["documento"];
@@ -57,7 +60,7 @@ class BeneficiarioController
         $model->tel_fixo   = $_POST["telFixo"];
         $model->celular    = $_POST["telCel"];
         $model->situacao   = $_POST["situacao"];
-
+        
         $model ->save();
         
         header("Location: ?pagina=consulta_beneficiario");

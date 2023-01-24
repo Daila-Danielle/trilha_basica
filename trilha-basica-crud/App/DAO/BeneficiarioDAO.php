@@ -2,7 +2,9 @@
 
 namespace App\DAO;
 
-Use App\Model\BeneficiarioModel;
+Use App\Models\BeneficiarioModel;
+
+var_dump('cheguei no DAO');
 
 class BeneficiarioDAO extends DAO
 {

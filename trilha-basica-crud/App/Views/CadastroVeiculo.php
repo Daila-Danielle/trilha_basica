@@ -76,7 +76,7 @@
                 
                 
    <center><div class="style-form-input full">
-        <input type="hidden" name="cadastrar" value="cadastrar">
+        <input type="hidden"  value="cadastrar">
         <button class="btn-submit">Cadastrar</button>
     </div></center>
 

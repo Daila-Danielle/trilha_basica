@@ -1,5 +1,7 @@
 <?php 
+
 use App\Controllers\BeneficiarioController;
+
 #caso escolha uma das opções manda pra pagina especifica.
 function getRotas($caminho)
 {
@@ -23,6 +25,7 @@ function getRotas($caminho)
             include ("./beneficiarios/mostrar-beneficiario.php");
         break;
         case "salvar_beneficiario":
+            include_once("Controllers/BeneficiarioController.php");
             BeneficiarioController::save();
         break;
         case "ver_beneficiario":

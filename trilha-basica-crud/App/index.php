@@ -8,7 +8,7 @@
 // includes
 include './Views/Container-inicio.php';
 include './Routes/rotas.php';
-include './Config/conexao.php';
+/* include './Config/conexao.php'; */
 
 #caso escolha uma das opções manda pra pagina especifica.
 getRotas(@$_REQUEST["pagina"]);

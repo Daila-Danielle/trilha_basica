@@ -1,7 +1,7 @@
 <?php
-namespace App\Model;
-use App\DAO\BeneficiarioDAO;
+namespace App\Models;
 
+var_dump('cheguei no  model');
 class BeneficiarioModel 
 {
     
@@ -11,6 +11,8 @@ class BeneficiarioModel
     
     public function save()
     {
+        var_dump('cheguei no save model');
+        
         
         $dao = new BeneficiarioDAO();
      
