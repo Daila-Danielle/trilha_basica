@@ -1,7 +1,6 @@
 <?php
 namespace App\Models;
-
-var_dump('cheguei no  model');
+use App\DAO\BeneficiarioDAO;
 class BeneficiarioModel 
 {
     
@@ -12,8 +11,8 @@ class BeneficiarioModel
     public function save()
     {
         var_dump('cheguei no save model');
-        
-        
+        var_dump($_POST);
+        include('DAO/BeneficiarioDAO.php');
         $dao = new BeneficiarioDAO();
      
         $dao->insert($this);

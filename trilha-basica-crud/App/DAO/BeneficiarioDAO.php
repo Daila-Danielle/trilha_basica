@@ -4,7 +4,7 @@ namespace App\DAO;
 
 Use App\Models\BeneficiarioModel;
 
-var_dump('cheguei no DAO');
+
 
 class BeneficiarioDAO extends DAO
 {
@@ -20,6 +20,8 @@ class BeneficiarioDAO extends DAO
 
     public function insert(BeneficiarioModel $model)
     {
+        include('Models/BeneficiarioModel.php');
+        var_dump('CHEGUEI NO INSERT');
         
         $sql = "INSERT INTO beneficiarios (nome, documento, logradouro, numero, bairro, cidade, uf, telefone, celular, situacao)
         VALUES ('{$model->nome}','{$model->documento}','{$model->logradouro}','{$model->numero}','{$model->bairro}','{$model->cidade}','{$model->uf}','{$model->tel_fixo}','{$model->celular}','{$model->situacao}')";

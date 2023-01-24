@@ -84,7 +84,7 @@
 
         <center>
             <div class="style-form-input full">
-                <input type="hidden" name="enviar" value="enviar">
+                
                 <button class="btn-submit">Cadastrar</button>
             </div>
         </center>
